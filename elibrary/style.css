@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  #searchBar {
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .book {
+    background: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book h3 {
+    margin: 0 0 10px;
+  }
+
+
+  @media only screen and (max-width: 1024px){
+    .book {
+      width: calc(30% - 20px);
+      
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .book {
+      width: calc(100% - 20px);
+      
+    }
+
+    .book h3 {
+      margin: 0 0 5px;
+    }
+  
+  }
+ 
